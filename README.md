@@ -6,7 +6,7 @@ Team Members
 
 Akshay Jain
 
-Nidhi Tholar
+Nidhi Tholar [nidhi-tholar]
 
 Sashank
 
