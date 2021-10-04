@@ -4,9 +4,9 @@
 
 #### Team Members:
 
-* Akshay Jain [AkshayJain2496] (https://github.com/AkshayJain2496)
+* Akshay Jain [AkshayJain2496](https://github.com/AkshayJain2496)
 * Nidhi Tholar [nidhi-tholar](https://github.com/nidhi-tholar)
-* Sashank Pidur Kuppuswamy [Sashank-PK] (https://github.com/Sashank-PK)
+* Sashank Pidur Kuppuswamy [Sashank-PK](https://github.com/Sashank-PK)
 
 ### DESCRIPTION OF THE PROBLEM:
 The project aims to predict the winning percentage in a game of chess using data mining techniques. A chess games is played by two people having black and white pieces, the person with white pieces making the first move. The main goal of the project is whenever a player chooses for any particular opening we to predict the outcome of game using the enormous amount data collected over the years. Along with that we will have sub-goals to find out which opening was famous at a given time(pre/post engine era), variation(time format), etc.
