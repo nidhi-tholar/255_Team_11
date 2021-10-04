@@ -1,4 +1,4 @@
-## CMPE255 Team Project
+## CMPE255 Team Project (Team 11)
 
 # Win-Loss Prediction Based on Opening A Player Chooses for a Game of Chess.
 
