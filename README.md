@@ -1,24 +1,21 @@
 ## CMPE255 Team Project
 
-#Player Action Prediction for ROCK – PAPER – SCISSORS 
+# Win-Loss Prediction Based on Opening A Player Chooses for a Game of Chess.
 
 #### Team Members:
 
-* Akshay Jain 
+* Akshay Jain [AkshayJain2496] (https://github.com/AkshayJain2496)
 * Nidhi Tholar [nidhi-tholar](https://github.com/nidhi-tholar)
-* Sashank
+* Sashank Pidur Kuppuswamy [Sashank-PK] (https://github.com/Sashank-PK)
 
 ### DESCRIPTION OF THE PROBLEM:
-The project aims to provide a modern approach using Data Mining techniques for a classical power balanced game. As described generally, the game of Rock-Paper-Scissors is played between two with total of 9 possibilities and winning chances of 1 in 3. However, when with humans involved in the game, the chance of randomness diminishes as humans tend to repeat any set of winning moves. With the use of pattern identification and prediction techniques, the odds of winning for a given set of games or plays drastically increases. The project also aims in incorporating the lecture topics taught in realizing and meeting the project outcomes. The end goal of the project is to successfully predict the player’s moves to win the game.
+The project aims to predict the winning percentage in a game of chess using data mining techniques. A chess games is played by two people having black and white pieces, the person with white pieces making the first move. The main goal of the project is whenever a player chooses for any particular opening we to predict the outcome of game using the enormous amount data collected over the years. Along with that we will have sub-goals to find out which opening was famous at a given time(pre/post engine era), variation(time format), etc.
 
 ### Considered Data:
-The project topic considered on the game of Rock Paper Scissors, and the supporting dataset which is considered for the project is provided in Kaggle by user Nikos Koumbakis. The dataset is mentioned to be created as a play between 2 agents mimicking the players for the given set of actions (Rock, Paper, Scissors). The dataset consists of games (a season of game) with a set of rounds (episodes) per game between 2 players with the outcome of the round being win/lose/draw. This outcome of the round is noted as reward for the agent. This dataset consists of player’s moves that is slightly biased for one player to mimic a pattern form of a human. The dataset could be found in the link Rock Paper Scissors Agents Battles | Kaggle 
+Most of the data considered in this project will be taken from the databases which stores chess games played over the years and also, we will try to create our own data by playing games manually. 
 
 ### Methodology and Approach:
-Preliminary process includes determining the power balance in the action moves in the dataset and determining if the dataset is clean. Further, the usage of Identifying Frequent Itemsets, Naïve Bayes Classification to determine pattern of win-lose-draw in the played games dataset. From the determined move, A simple decision tree could be incorporated to make the computer’s move to result the outcome of the round. Though the considered methodology on determining and mining might change in actual implementation, the initial phase of exploration suggests the considered methods as a possibility.
+Preliminary process includes determining the moves and results in the dataset and determining if the dataset is clean. Further, the usage of Identifying Frequent Openings, Naïve Bayes Classification to determine pattern of win-lose-draw in the played games dataset. From the determined games, A decision tree could be incorporated to make the computer’s move to result the outcome of the round. Though the considered methodology on determining and mining might change in actual implementation, the initial phase of exploration suggests the considered methods as a possibility.
 
 ### Success Determination:
-The Game’s perspective suggests considering only true wins as success and true lose as failure with minimizing the outcome of draws. From the initially suggested techniques to determine and predict the player’s next move, a simple ratio could determine the success rate of the game. Though the dataset is used to have intuition on the previously played moves, splitting the same dataset to have a testing set could provide scope to evaluate our model’s accuracy.
-
-### Other Notable Links for Inspiration:
-	Online Rock-Paper-Scissors AI based Game portal : [Rock, Paper, Scissors | Afiniti] (https://www.afiniti.com/corporate/rock-paper-scissors)
+The success ratio will be calculated if the algorithm predicts correctly the outcomes of the game played using any certain opening and whether it holds true for the actual result of the game.
