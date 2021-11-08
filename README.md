@@ -19,3 +19,5 @@ Preliminary process includes determining the moves and results in the dataset an
 
 ### Success Determination:
 The success ratio will be calculated if the algorithm predicts correctly the outcomes of the game played using any certain opening and whether it holds true for the actual result of the game.
+
+testing git commit
