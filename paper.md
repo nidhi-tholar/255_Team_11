@@ -11,6 +11,52 @@ header-includes: |
 # Abstract
 
 # Introduction
+A Game of Chess is played between two players on an 8x8 Square board,16 pieces on each side, and with millions of board positions and possibilities. It was invented fifteen centuries back in India and has been spread all over the world it lots of changes in the game's rules over time until they were finalized around the 1880s which is also the romantic era of chess. There are millions of games played and recorded in various places like books, newspapers, and online databases over time and the players use them to improve and learn the game of chess.
+In this project, we are trying to create an algorithm that helps chess players to learn about the different types of chess openings and statistics associated with it like winning percentage over the years, use of it at grandmaster (expert at the game) level, etc. A game of chess is stored in a form of a PNG (portable game notation) file. To store and process a chess game we first need to understand the notations used in a PNG file, a sample PNG looks like –
+[Event "New York"]
+[Site "New York"]
+[Date "1918.??.??"]
+[Round "?"]
+[White "Capablanca, Jose Raul"]
+[Black "Marshall, Frank James"]
+[Result "1-0"]
+[WhiteElo "2589"]
+[BlackElo "2632"]
+[ECO "C89"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5
+9.exd5 Nxd5 10.Nxe5 Nxe5 11.Rxe5 Nf6 12.Re1 Bd6 13.h3 Ng4 14.Qf3 Qh4 15.d4 Nxf2
+16.Re2 Bg4 17.hxg4 Bh2+ 18.Kf1 Bg3 19.Rxf2 Qh1+ 20.Ke2 Bxf2 21.Bd2 Bh4 22.Qh3 Rae8+
+23.Kd3 Qf1+ 24.Kc2 Bf2 25.Qf3 Qg1 26.Bd5 c5 27.dxc5 Bxc5 28.b4 Bd6 29.a4 a5
+30.axb5 axb4 31.Ra6 bxc3 32.Nxc3 Bb4 33.b6 Bxc3 34.Bxc3 h6 35.b7 Re3 36.Bxf7+ 1-0
+
+Elo is rating associated with the player, higher rating indicates a better player(mostly).
+
+
+Important notations and jargons to learn –
+A chessboard consists of 8files(columns) which are denoted from ‘a’ to ‘h’ and 8 ranks(rows) which are denoted from 1-8.
+The moves are denoted starting with white pieces and followed by black pieces.
+Pieces and notations – there are 6 different pieces in a game of chess 
+1)A pawn – there are 8 pawns with each side, A pawn moves only in one direction and captures diagonally.it can also move one or two steps in the first move and after that, it can only one step. It is denoted with the file name on which it is present for example: 1.e4 denotes on the first move white as pushed the pawn on 'e' file from his current position to e4.
+2)A Bishop – there are 2 bishops with each side namely light squared(white) bishop and dark-squared(black) bishop they move diagonally in any direction and any number of steps. It is denoted with a capital letter ‘B’ for example: 3.Bb5 denotes white has moved 
+the bishop to b5.
+3) A Knight – there are 2 knights witch each side and they move in an ‘L’ in any direction and a knight is the only piece that can move over other pieces. It is denoted with the capital letter ‘N’ for example: 4.Ba4 Nf6 denotes black has moved to the knight to f6.
+4)A Rook – there are 2 rooks with each side and they move in a straight line both horizontally and vertically. It is denoted with the capital letter ‘R’
+For example: 12.Re1 denotes white has moved to the rook to e1.
+5)A Queen- there is one queen per side and is the most powerful piece on the board which can move in all directions (vertically, horizontally, and diagonally) any number of steps.it is denoted with the capital letter ‘Q’ for example: 14.Qf3 Qh4 white has moved the queen to f3.
+6)The King-there is one king per side and it is the most important piece on the board one it is captured the game ends and it can be moved in all direction but only one step. It is denoted with the capital letter ‘K’ for example: 24.Kc2 denoted white has moved to the king to c2.
+
+
+
+
+Other important notations – 
+castling – it is denoted by ‘O-O’ or ‘O-O-O’ depending on the side the king moves.
+
+Checks- it is denoted by a plus sign ‘Rae8+’, it denoted there is a direct attack to the opposite side king.
+
+Captures- it is denoted by a small letter ‘x’ eg: Nxe5 knight has captured the piece on e5.
+
+
 
 
 The Data 
