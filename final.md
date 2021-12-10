@@ -97,7 +97,12 @@ Chess is a complex game and a game’s result is affected by lot of factors othe
 
 \textbf{Approach 2}
 \newline
-From the obtained dataset, the major data to determine the game’s outcome is the game’s moves that are played. The player irrespective of their quality, tend to repeat a set of moves, and by analyzing their games played with the games of other player’s we could determine the similar moves that are played predominantly and can be used to determine a set of better possible moves towards the middle game. To achieve this, we are implementing the technique of finding the similarity between all the possible games considered, and the resulting similarities are stored in an array of played game indexes. With a given threshold, the games that spanned out similar moves would be grouped, and the remaining unique moves would be considered as possible moves. This is implemented using the python inbuilt library of difflib and with the help of the Sequence matcher module. The sequence matcher module compares two sets of strings and returns the similarity object from which the percentage of similarity or the ratio can be determined for any two given games. This technique would have been an ideal solution to provide numerical values to the game moves if the intensity on the hardware is not excess. While running this technique for a simple set of 30 thousand games, resulted in exhausted memory. Further scope for improvement on this technique is currently being observed and explored.
+This dataset contains a significant amount of information that can be used to predict how the game will end.
+Regardless of the player's skill level, they tend to play the same set of plays over and over again, and by comparing their games with other players, we can identify the most common moves and use this information to identify better strategies for the middle game. These commonalities are kept in an array of played game indexes, which we're using to discover the closest match between all the games we've considered. Games with similar moves would be grouped together and the remaining unique moves would be regarded as possible moves if a certain threshold was met. For this, Python's built-in library for difflib is used, along with the Sequence Matcher module. An object called the similarity object is returned by the sequence matcher module after it compares two strings and returns the percentage of similarity for each two supplied games.
+If the intensity on the hardware is not excessive, this technique would have been a perfect solution for providing numerical values to the game moves. Exhausted memory occurred while running this strategy on a simple 30 thousand game set. In the meanwhile, there is still room for development in this method.
+ Significance of the method – Using this method, we are able to determine which openings and moves lead to what kind of final game. For every chess player, the endgame method is the most important aspect of winning the game, and knowing what to expect in the endgame simply by glancing at the opening and starting moves will undoubtedly aid in the player's success.
+
+
 \newline
 \newline
 \textbf{Approach 3}
@@ -107,6 +112,8 @@ Since the problem considered involves chess moves as data and the major output v
 
 
 # Comparisons
+Decision Trees: 
+We used Decision tree to analyze the impact of Opening moves for a game’s result. We performed two approaches. The first approach limited the Features to Elo Rating of players and Opening. The second approach considered first 10-20 moves and Elo Rating of players as features. Both the models had accuracy around 50%. We modified the depth of decision tree and also used K-Fold cross variation in a hope to achieve higher accuracy, but unfortunately the accuracy remained the same.
 
 # Example Analysis
 
