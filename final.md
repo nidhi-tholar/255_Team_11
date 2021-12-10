@@ -1,5 +1,5 @@
 ---
-title: Win-Loss Prediction Based on Opening A Player Chooses for a Game of Chess
+title: Win-Loss Prediction Based on an Opening A Player Chooses for a Game of Chess
 date: "October 2021"
 author: Akshay Jain, Nidhi Tholar, Sashank Pidur Kuppuswamy, San José State University
 
@@ -102,18 +102,12 @@ Regardless of the player's skill level, they tend to play the same set of plays 
 If the intensity on the hardware is not excessive, this technique would have been a perfect solution for providing numerical values to the game moves. Exhausted memory occurred while running this strategy on a simple 30 thousand game set. In the meanwhile, there is still room for development in this method.
  Significance of the method – Using this method, we are able to determine which openings and moves lead to what kind of final game. For every chess player, the endgame method is the most important aspect of winning the game, and knowing what to expect in the endgame simply by glancing at the opening and starting moves will undoubtedly aid in the player's success.
 
-
-\newline
-\newline
 \textbf{Approach 3}
 \newline
 Frequent Pairs Technique 
 It is necessary to identify frequently recurring consecutive movements from the considered set of opening PGNs in order to provide ideas for the following move to play or take into consideration. In order to forecast the moves, we take into account all of the moves that have been made on the board and the color of the pieces that are being used.
 It was possible to compare the suggestions produced by the model with those offered by a popular online chess site move suggestions provider, and the results were positive. The screenshots of the results obtained uploaded in the images folder.
 Significance of the method – “The most powerful weapon in Chess is to have the next move”- Emanuel Lasker (world champion). In chess games, the majority of moves follow a predictable pattern, and having a large database to anticipate outcomes, the results that we achieved are of tremendous benefit to the player.
-
-
-
 
 # Comparisons
 Decision Trees: 
@@ -144,6 +138,7 @@ For the third method, we devised a way for predicting the next probable move bas
 
 # Conclusions
 Finally, we can state that there is a lot of data that can be gleaned from games that have been stored for a long time. Our tactics are most suited for newcomers to the game who lack a thorough understanding of the subject matter. For a grandmaster, our algorithm would be of little help, given there are already several AI-based chess programs on the market, as well as room for improvement in our approaches.
+
 # References
 [1] https://www.pgnmentor.com/files.html#modking
 [2] https://scikit-learn.org/stable/modules/tree.html
