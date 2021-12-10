@@ -107,13 +107,33 @@ If the intensity on the hardware is not excessive, this technique would have bee
 \newline
 \textbf{Approach 3}
 \newline
-Since the problem considered involves chess moves as data and the major output variable considered is win-lose, We are formulating the problem as determining the output category as ‘win’, lose’ or ‘draw’ based on the previous games played. However the game data is of varying length, and being coded texts, choosing a model that performs better with this data had been a major concern. Most of the machine learning models work with numerical values for better prediction results. Hence If there could be a way to incorporate numerical values into the given text, then the data could be generalized for other data models. The initial suggestion would be to consider the bag of words method or the word to vector techniques. However, these techniques will consider the occurrences of the word in that document as a unique occurrence with unique meaning and would assign a numerical value to the word. The Chess moves data could not be considered as unique words with unique meanings as the moves preceding the current move will determine the flow of the game and this would change dynamically as the game moves further into the finale. So to create a unique meaning to the moves that are made, we are considering an approach inspired by both words to vector method and the alpha zero’s algorithm. This technique assigns unique positional code to each and every piece that is part of the game and provides a 32-character wide code for the current alignment of pieces on the board. The advantage of this considered technique is the previously played games would look only at the possibility of the move, completely ignoring the previous moves that led to that particular board formation. Further, the best possible move from the current alignment of pieces can be figured irrespective of the opening of the game. From the data perspective, the frequent pairs could be easily achieved by traversing through the game moves across different games and could be stored as a key-value pair for determining the next possible better move. The difference in the length of data has also been handled. All the improvements and hurdles are tackled at expense of extra information for every move. The data considered for every game increases drastically and the only improvement that is being considered currently is to update the historical game library from the given dataset simultaneously as the code for every arrangement is generated. Further improvements on this technique are being explored.
+Frequent Pairs Technique 
+It is necessary to identify frequently recurring consecutive movements from the considered set of opening PGNs in order to provide ideas for the following move to play or take into consideration. In order to forecast the moves, we take into account all of the moves that have been made on the board and the color of the pieces that are being used.
+It was possible to compare the suggestions produced by the model with those offered by a popular online chess site move suggestions provider, and the results were positive. The screenshots of the results obtained uploaded in the images folder.
+Significance of the method – “The most powerful weapon in Chess is to have the next move”- Emanuel Lasker (world champion). In chess games, the majority of moves follow a predictable pattern, and having a large database to anticipate outcomes, the results that we achieved are of tremendous benefit to the player.
+
 
 
 
 # Comparisons
 Decision Trees: 
 We used Decision tree to analyze the impact of Opening moves for a game’s result. We performed two approaches. The first approach limited the Features to Elo Rating of players and Opening. The second approach considered first 10-20 moves and Elo Rating of players as features. Both the models had accuracy around 50%. We modified the depth of decision tree and also used K-Fold cross variation in a hope to achieve higher accuracy, but unfortunately the accuracy remained the same.
+
+Generalization of Chess board Method:
+
+Accordingly, we phrase the task as detecting whether the outcome of previous games is "win," "loss," "draw," or none of the above. Because the game data is coded, finding a model that worked well with it was a major concern. More or less all of the machinery. In order to improve forecasts, models make use of numerical values. Hence The data could be generalized if it was possible to add numerical values to the text. The bag of words method is a good place to start. Converting text into a vector Every instance of this word in the document is treated as though it were a single, distinct entity. It is possible that the chess moves data does not contain only one unique word.
+The game's flow is determined by the moves that came before them, and this flow shifts as the game goes on to the finish of the story. As a result, we're looking towards fusing the two in order to give our acts more weight.
+Word to vector conversion algorithms - A positional code is generated using this procedure for each item to determine the current board alignment and generates a 32-character code representing the game's current board position. The advantage of using this strategy is that previous games would focus just on the current move, disregarding any earlier actions that contributed to the current board arrangement. It is possible to compute the best move based on the current alignment of the pieces regardless of when the game begins. Navigating between games could be kept as a pair of key-value pairs in order to decide the optimal next step.
+The mismatch in data length has also been corrected. There is an additional charge for any enhancements or issues. Every step is recorded. Every game's data grows at an exponential pace, and the only way to keep up is to develop new code for each arrangement and then update the historical game library with it.
+The potential of this approach is currently being studied.        
+
+why it doesn't work - 
+Team members came up with an in-house solution for determining the most common moves and pairings of pieces using the Considered approach. In the end, this method's complexity and verbosity led to the creation of a cluttered and verbose set of data that was difficult to read and comprehend. After considering the game's characteristics, we came up with a straightforward approach to indicate each one.
+
+Zero Shot learning – 
+One shot and zero shot learning approaches are investigated for the practicality of neural network-based methods for predicting outcomes. Zero shot learning's prerequisites - a comprehension of the game's rules and a working knowledge of how a neural network is implemented - severely limited the study of alternative approaches.
+Also, Since the considered problem is of classification type, other approaches of regression and clustering are ignored. since most of the Classification algorithms are tree based and the simplest of the model being Decision Tree Classifier, the dataset is highly explored using Decision Tree method as the training and testing time is fastest for Decision Tree Classifier.
+
 
 # Example Analysis
 
@@ -123,7 +143,7 @@ For the third method, we devised a way for predicting the next probable move bas
 
 
 # Conclusions
-
+Finally, we can state that there is a lot of data that can be gleaned from games that have been stored for a long time. Our tactics are most suited for newcomers to the game who lack a thorough understanding of the subject matter. For a grandmaster, our algorithm would be of little help, given there are already several AI-based chess programs on the market, as well as room for improvement in our approaches.
 # References
 [1] https://www.pgnmentor.com/files.html#modking
 [2] https://scikit-learn.org/stable/modules/tree.html
