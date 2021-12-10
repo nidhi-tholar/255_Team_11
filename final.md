@@ -117,6 +117,11 @@ We used Decision tree to analyze the impact of Opening moves for a game’s resu
 
 # Example Analysis
 
+Finding out how much of an impact an opening has on a game's outcome is one of our first analyses. We used Decision Trees using Elo Ratings of Players and Openings as features since we needed to perform predictive analysis. The model's accuracy was shown to be low, proving that a game's outcome cannot be predicted just on the basis of its Opening.
+In the second way, we've tried forecasting what kind of game we can obtain from any given opening, which will help a player understand what kind of game he's getting into and direct him to the best strategies and tactics available in that game. Image of the result have been uploaded in the git-hub repo.
+For the third method, we devised a way for predicting the next probable move based on the previous moves made on the board. This method will aid the player in searching for possible moves made in that particular location, as knowing the next move to make is crucial to victory. Image of the result have been uploaded in the git-hub repo.
+
+
 # Conclusions
 
 # References
