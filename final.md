@@ -77,7 +77,10 @@ Openings:
 Though the data files were for a respective opening, there were some errors. We dropped the rows where the opening didn’t belong to the 15 openings we chose.
 
 # Methods
-The Dataset created has multiple features ranging from the game’s player, the date the game was played to the moves played for that game’s particular round. The final outcome of the game is noted as white black or draw in the result column. Since the problem’s target variable is categorical and the data is available in columns, the possibilities of applying machine learning techniques are considered. The simplest classification technique is considered initially to determine the outcome.
+The Dataset created has multiple features ranging from the games ,player, the date the game was played to the moves played for that game’s 
+particular round. The final outcome of the game is noted as white black or draw in the result column. Since the problem’s target variable is
+ categorical and the data is available in columns, the possibilities of applying machine learning techniques are considered. 
+ The simplest classification technique is considered initially to determine the outcome.
 
 \textbf{Decision Tree}
 \newline
