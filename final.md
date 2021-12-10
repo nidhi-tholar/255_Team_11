@@ -10,6 +10,9 @@ header-includes: |
 
 # Abstract
 
+Using data mining techniques, the project seeks to forecast the winning percentage in a chess game. The main purpose of the research is to predict the outcome of a game using the massive quantity of data accumulated over the years whenever a player chooses a particular opening. Furthermore, we have methods which we will suggest next moves to be played.
+
+
 # Introduction
 A Game of Chess is played between two players on an 8x8 Square board,16 pieces on each side, and with millions of board positions and possibilities. It was invented fifteen centuries back in India and has been spread all over the world it lots of changes in the game's rules over time until they were finalized around the 1880s which is also the romantic era of chess. There are millions of games played and recorded in various places like books, newspapers, and online databases over time and the players use them to improve and learn the game of chess.
 In this project, we are trying to create an algorithm that helps chess players to learn about the different types of chess openings and statistics associated with it like winning percentage over the years, use of it at grandmaster (expert at the game) level, etc. A game of chess is stored in a form of a PNG (portable game notation) file. To store and process a chess game we first need to understand the notations used in a PNG file, a sample PNG looks like –
